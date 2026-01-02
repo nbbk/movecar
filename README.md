@@ -96,8 +96,9 @@
 ### 第四步：配置环境变量
 
 1. Worker →「Settings」→「Variables and Secrets」
-2. 添加以下变量：
-   - `BARK_URL`：你的 Bark 推送地址（如 `https://api.day.app/xxxxx`）
+2. 添加以下变量（任选其一或全部添加）：
+   - `BARK_URL`：Bark 推送地址（iOS推荐，如 `https://api.day.app/xxxxx`）
+   - `PUSHPLUS_TOKEN`：PushPlus 令牌（微信推送推荐，去 [pushplus.plus](http://www.pushplus.plus/) 获取）
    - `PHONE_NUMBER`：备用联系电话（可选）
 
 ### 第五步：绑定域名（可选）
