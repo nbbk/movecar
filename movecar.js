@@ -100,8 +100,16 @@ async function handleNotify(request, url) {
     const message = body.message || '车旁有人等待';
     const location = body.location || null;
     const delayed = body.delayed || false;
+// --- 修改前 ---
+//  const confirmUrl = url.origin + '/owner-confirm';
 
-    const confirmUrl = url.origin + '/owner-confirm';
+// --- 修改后：优先读取环境变量中的域名，如果没有配置则回退到原始域名 ---
+    const baseDomain = (typeof EXTERNAL_URL !== 'undefined' && EXTERNAL_URL) 
+                       ? EXTERNAL_URL.replace(/\/$/, "") // 去掉末尾斜杠
+                       : url.origin;
+
+    const confirmUrl = baseDomain + '/owner-confirm';
+
     const confirmUrlEncoded = encodeURIComponent(confirmUrl);
 
     let notifyBody = '🚗 挪车请求';
