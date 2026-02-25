@@ -93,7 +93,7 @@
 
 ### 1. 生成链接
 你的专属链接为：`https://你的域名/?u=你的ID`
-例如：`https://movecar.xxxx.workers.dev/?u=nianba`
+例如：`https://movecar.xxxx.workers.dev/?u=xiaowang`
 
 ### 2. 生成二维码
 使用 [草料二维码](https://cli.im/) 将链接转为二维码下载。
