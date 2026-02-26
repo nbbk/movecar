@@ -321,8 +321,8 @@ function renderOwnerPage(userKey) {
     <h2 style="margin:10px 0">${carTitle}</h2>
     <div id="mapArea" class="map-box">
       <p style="font-size:14px; color:#1e40af; margin-bottom:10px">对方位置已送达 📍</p>
-      <a id="amapLink" href="#" class="map-btn">高德</a>
-      <a id="appleLink" href="#" class="map-btn" style="background:#000">苹果</a>
+      <a id="amapLink" href="#" class="map-btn">高德地图</a>
+      <a id="appleLink" href="#" class="map-btn" style="background:#000">苹果地图</a>
     </div>
     <button id="confirmBtn" class="btn" onclick="confirmMove()">🚀 我已知晓，马上过去</button>
   </div>
