@@ -1,5 +1,5 @@
 /**
- * MoveCar 多用户智能挪车系统 - v2.4
+ * MoveCar 多用户智能挪车系统 - v2.1
  * 优化：30分钟断点续传 + 域名优先级二维码 + 多用户隔离
  */
 
@@ -89,7 +89,7 @@ async function handleNotify(request, url, userKey) {
     if (typeof MOVE_CAR_STATUS === 'undefined') throw new Error('KV 未绑定');
     const lockKey = "lock_" + userKey;
     const isLocked = await MOVE_CAR_STATUS.get(lockKey);
-    if (isLocked) throw new Error('发送频率过快，请稍后');
+    if (isLocked) throw new Error('发送频率过快，请一分钟后再试');
 
     const body = await request.json();
     const sessionId = body.sessionId; 
