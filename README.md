@@ -131,7 +131,9 @@
 例如：`https://movecar.xxxx.workers.dev/?u=xiaowang`
 
 ### 2. 生成二维码
-使用 [草料二维码](https://cli.im/) 将链接转为二维码下载。
+1.使用内置二维码生成器自动生成挪车二维码：
+访问地址：https://你的域名/qr?u=你的ID 来生成挪车码。
+2.使用 [草料二维码](https://cli.im/) 将你的专属链接转为二维码下载。
 
 ### 3. 美化与打印
 - 使用 **Midjourney** 或 **ChatGPT (DALL-E)** 生成精美的挪车牌背景。
